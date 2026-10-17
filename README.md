@@ -10,11 +10,13 @@
 <img src="https://img.shields.io/badge/Windows-PC-4a90d9?style=for-the-badge&labelColor=14121a" alt="Windows">
 <img src="https://img.shields.io/badge/%EB%82%9C%EC%9D%B4%EB%8F%84-%EB%A7%A4%EC%9A%B0%20%EC%96%B4%EB%A0%A4%EC%9B%80-c0392b?style=for-the-badge&labelColor=14121a" alt="난이도 매우 어려움">
 
-**[⬇ 다운로드](https://github.com/starMinK/deephold-releases/releases/latest)** &nbsp;·&nbsp; **[확률 정보](docs/확률정보.md)** &nbsp;·&nbsp; **[의견 남기기](https://github.com/starMinK/deephold-releases/issues)**
+**[⬇ 다운로드](https://github.com/starMinK/deephold-releases/releases/latest)** &nbsp;·&nbsp; **[패치 노트](패치노트/README.md)** &nbsp;·&nbsp; **[확률 정보](docs/확률정보.md)** &nbsp;·&nbsp; **[의견 남기기](https://github.com/starMinK/deephold-releases/issues)**
 
 </div>
 
 ---
+
+> **🆕 v0.3.0 — 보스층 · 파티 · 제련소 · 폐광산 대개편** &nbsp;→&nbsp; [패치 노트 보기](패치노트/v0.3.0.md)
 
 ## 🕯 어떤 게임인가요
 
