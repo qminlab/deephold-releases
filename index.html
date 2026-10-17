@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>딥홀드 다운로드</title>
+<style>
+  :root{--bg:#14121a;--fg:#f1e8d0;--sub:#b8ae98;--card:#1f1b29;--line:#3a3347;--accent:#e0a040;--accent-fg:#1a1306}
+  @media (prefers-color-scheme: light){:root{--bg:#f6efde;--fg:#2a2118;--sub:#6f604a;--card:#fffaf0;--line:#d8c9a8;--accent:#b8741a;--accent-fg:#fff}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 "Noto Sans KR",system-ui,sans-serif;padding:48px 20px 64px;display:flex;justify-content:center}
+  main{width:100%;max-width:560px;display:flex;flex-direction:column;gap:22px}
+  h1{margin:0;font-size:2.4rem;letter-spacing:.04em}
+  .tag{color:var(--sub);margin:0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:12px}
+  .btn{display:block;text-align:center;text-decoration:none;background:var(--accent);color:var(--accent-fg);font-weight:700;padding:14px 18px;border-radius:10px;font-size:1.05rem}
+  .btn.alt{background:transparent;color:var(--fg);border:1px solid var(--line);font-weight:500;font-size:.95rem}
+  .btn[aria-disabled=true]{opacity:.45;pointer-events:none}
+  h2{margin:0;font-size:1.05rem}
+  ol{margin:0;padding-left:1.2em;color:var(--sub)}
+  .ver{font-size:.9rem;color:var(--sub)}
+  small{color:var(--sub)}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>딥홀드</h1>
+    <p class="tag">던전을 파밍하고, 내 던전을 짓고, 친구가 도전하는 도트 액션</p>
+  </header>
+
+  <section class="card">
+    <a id="setup" class="btn" href="#" aria-disabled="true">윈도우용 설치 파일 받기</a>
+    <a id="portable" class="btn alt" href="#" aria-disabled="true">설치 없이 바로 실행(포터블)</a>
+    <div class="ver" id="ver">최신 버전 정보를 불러오는 중…</div>
+  </section>
+
+  <section class="card">
+    <h2>설치 방법</h2>
+    <ol>
+      <li>위 설치 파일을 받아 실행해요.</li>
+      <li>파란 “Windows의 PC 보호” 창이 뜨면 <b>추가 정보 → 실행</b>을 눌러요. (아직 정식 서명이 없어서 나오는 안내예요)</li>
+      <li>설치 후엔 게임을 켤 때마다 새 버전을 자동으로 받아요. 설치형은 바뀐 부분만 내려받아요.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>버전이 다르면?</h2>
+    <small>친구들과 같은 버전이어야 해요. 옛 버전은 실행할 때 “업데이트가 필요해요” 창이 뜨고, 새 버전을 받은 뒤에 열려요.</small>
+  </section>
+</main>
+<script>
+  fetch('version.json?t=' + Date.now(), { cache: 'no-store' })
+    .then(function (r) { return r.json(); })
+    .then(function (v) {
+      var s = document.getElementById('setup'), p = document.getElementById('portable');
+      s.href = v.setup; p.href = v.portable;
+      s.removeAttribute('aria-disabled'); p.removeAttribute('aria-disabled');
+      document.getElementById('ver').textContent = '최신 버전 ' + v.latest + ' · ' + String(v.released || '').slice(0, 10);
+    })
+    .catch(function () {
+      document.getElementById('ver').textContent = '버전 정보를 불러오지 못했어요. 잠시 뒤 새로고침해 주세요.';
+    });
+</script>
+</body>
+</html>
