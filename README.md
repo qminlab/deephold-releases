@@ -13,3 +13,7 @@
 ## 의견 남기기
 
 버그나 개선 의견은 [Issues](https://github.com/starMinK/deephold-releases/issues) 에 남겨 주세요.
+
+## 저작권
+
+게임의 코드와 에셋(그림·소리·음악 등)은 무단으로 복제, 수정, 재배포하거나 다른 용도로 사용할 수 없습니다. 플레이 영상과 스크린샷은 자유롭게 올려도 됩니다. 자세한 내용은 [LICENSE](LICENSE)를 확인하세요.
