@@ -32,6 +32,8 @@
   <section class="card">
     <a id="setup" class="btn" href="#" aria-disabled="true">윈도우용 설치 파일 받기</a>
     <a id="portable" class="btn alt" href="#" aria-disabled="true">설치 없이 바로 실행(포터블)</a>
+    <a id="macArm" class="btn alt" href="#" aria-disabled="true" hidden>맥용 받기 (Apple 칩 M1~)</a>
+    <a id="macX64" class="btn alt" href="#" aria-disabled="true" hidden>맥용 받기 (Intel)</a>
     <div class="ver" id="ver">최신 버전 정보를 불러오는 중…</div>
   </section>
 
@@ -41,6 +43,16 @@
       <li>위 설치 파일을 받아 실행해요.</li>
       <li>파란 “Windows의 PC 보호” 창이 뜨면 <b>추가 정보 → 실행</b>을 눌러요. (아직 정식 서명이 없어서 나오는 안내예요)</li>
       <li>설치 후엔 게임을 켤 때마다 새 버전을 자동으로 받아요. 설치형은 바뀐 부분만 내려받아요.</li>
+    </ol>
+  </section>
+
+  <section class="card" id="macHelp" hidden>
+    <h2>맥에서 설치하기</h2>
+    <ol>
+      <li>내 맥이 Apple 칩(M1 이상)이면 첫 번째, Intel 이면 두 번째 파일을 받아요. (메뉴 → 이 Mac에 관하여에서 확인)</li>
+      <li>받은 dmg 를 열어 Deephold 를 응용 프로그램 폴더로 끌어 넣어요.</li>
+      <li>처음 한 번만 <b>Deephold 를 우클릭 → 열기</b>를 눌러요. (아직 정식 서명이 없어서 나오는 안내예요. 막히면 시스템 설정 → 개인정보 보호 및 보안 → “그래도 열기”)</li>
+      <li>맥은 자동 업데이트 대신, 새 버전이 필요하면 이 페이지를 열어 새 파일을 받으라고 알려 줘요.</li>
     </ol>
   </section>
 
@@ -56,6 +68,13 @@
       var s = document.getElementById('setup'), p = document.getElementById('portable');
       s.href = v.setup; p.href = v.portable;
       s.removeAttribute('aria-disabled'); p.removeAttribute('aria-disabled');
+      var macs = [['macArm', v.mac_arm64], ['macX64', v.mac_x64]], anyMac = false;
+      macs.forEach(function (m) {
+        var a = document.getElementById(m[0]);
+        if (!m[1]) return;
+        a.href = m[1]; a.hidden = false; a.removeAttribute('aria-disabled'); anyMac = true;
+      });
+      document.getElementById('macHelp').hidden = !anyMac;
       document.getElementById('ver').textContent = '최신 버전 ' + v.latest + ' · ' + String(v.released || '').slice(0, 10);
     })
     .catch(function () {
