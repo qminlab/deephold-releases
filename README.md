@@ -6,18 +6,18 @@
 
 **던전을 파밍하고 · 내 던전을 짓고 · 친구가 도전하는 2.5D 도트 액션**
 
-<a href="https://github.com/starMinK/deephold-releases/releases/latest"><img src="https://img.shields.io/github/v/release/starMinK/deephold-releases?label=%EC%B5%9C%EC%8B%A0%20%EB%B2%84%EC%A0%84&style=for-the-badge&color=e0a040&labelColor=14121a" alt="최신 버전"></a>
+<a href="https://github.com/qminlab/deephold-releases/releases/latest"><img src="https://img.shields.io/github/v/release/qminlab/deephold-releases?label=%EC%B5%9C%EC%8B%A0%20%EB%B2%84%EC%A0%84&style=for-the-badge&color=e0a040&labelColor=14121a" alt="최신 버전"></a>
 <img src="https://img.shields.io/badge/Windows-PC-4a90d9?style=for-the-badge&labelColor=14121a" alt="Windows">
 <img src="https://img.shields.io/badge/macOS-Apple%20%C2%B7%20Intel-a0a0a8?style=for-the-badge&labelColor=14121a" alt="macOS">
 <img src="https://img.shields.io/badge/%EB%82%9C%EC%9D%B4%EB%8F%84-%EB%A7%A4%EC%9A%B0%20%EC%96%B4%EB%A0%A4%EC%9B%80-c0392b?style=for-the-badge&labelColor=14121a" alt="난이도 매우 어려움">
 
-**[⬇ 다운로드](https://github.com/starMinK/deephold-releases/releases/latest)** &nbsp;·&nbsp; **[패치 노트](패치노트/README.md)** &nbsp;·&nbsp; **[확률 정보](docs/확률정보.md)** &nbsp;·&nbsp; **[개인정보 처리방침](docs/개인정보처리방침.md)** &nbsp;·&nbsp; **[의견 남기기](https://github.com/starMinK/deephold-releases/issues)**
+**[⬇ 다운로드](https://github.com/qminlab/deephold-releases/releases/latest)** &nbsp;·&nbsp; **[패치 노트](패치노트/README.md)** &nbsp;·&nbsp; **[확률 정보](docs/확률정보.md)** &nbsp;·&nbsp; **[개인정보 처리방침](docs/개인정보처리방침.md)** &nbsp;·&nbsp; **[의견 남기기](https://github.com/qminlab/deephold-releases/issues)**
 
 </div>
 
 ---
 
-> **🆕 v0.6.1 — 피할 수 있는 용광로** &nbsp;→&nbsp; [패치 노트](패치노트/v0.6.1.md) &nbsp;·&nbsp; 증기 예고 1.4초 · 밸브 자리 · 화구 5.5초 · 과열 완화 · 용광로 새 그림 · 도트 예고 장판 · 보스 그림자 · 일시정지 · 이전: [v0.6.0 그림대로 맞는다](패치노트/v0.6.0.md)
+> **🆕 v0.6.2 — 새 주소로 이사** &nbsp;→&nbsp; [패치 노트](패치노트/v0.6.2.md) &nbsp;·&nbsp; 게임이 안 켜지면 설치 파일을 한 번만 직접 받아 주세요 · 이전: [v0.6.1 피할 수 있는 용광로](패치노트/v0.6.1.md)
 
 ## 🕯 어떤 게임인가요
 
@@ -88,7 +88,7 @@
 
 ## ⬇ 설치 방법
 
-1. **[최신 버전 페이지](https://github.com/starMinK/deephold-releases/releases/latest)** 에서 `Deephold-Setup-버전.exe` 를 받아 실행합니다.
+1. **[최신 버전 페이지](https://github.com/qminlab/deephold-releases/releases/latest)** 에서 `Deephold-Setup-버전.exe` 를 받아 실행합니다.
 2. 파란 **"Windows의 PC 보호"** 창이 뜨면 **추가 정보 → 실행** 을 누르세요. 아직 정식 서명이 없어서 나오는 안내입니다.
 3. 설치 후에는 게임을 켤 때마다 새 버전을 **자동으로** 받습니다.
 
@@ -112,7 +112,7 @@
 
 ## 💬 의견 남기기
 
-버그를 찾았거나 이런 게 있으면 좋겠다 싶으면 **[Issues](https://github.com/starMinK/deephold-releases/issues)** 에 남겨 주세요. 모든 의견을 읽습니다.
+버그를 찾았거나 이런 게 있으면 좋겠다 싶으면 **[Issues](https://github.com/qminlab/deephold-releases/issues)** 에 남겨 주세요. 모든 의견을 읽습니다.
 
 ## © 저작권
 
